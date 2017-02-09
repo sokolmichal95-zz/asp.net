@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    </head>
+<body>
+    <form id="form1" runat="server">
+        <table style="font-family:Arial">
+            <tr>
+                <td colspan="2" style="width:800px; height:80px; background-color:darkcyan; text-align:center">
+                    <h1>QUESTIONNAIRES</h1>
+                </td>
+            </tr>
+            <tr>
+                <td style="width:150px; height:500px; background-color:darkcyan">
+                    <p><strong>
+                        <asp:HyperLink ID="HyperLink1" NavigateUrl="~/Login.aspx" runat="server">Login</asp:HyperLink>
+                        </strong></p>
+                    <p><strong>
+                        <asp:HyperLink ID="HyperLink2" NavigateUrl="~/Registration.aspx" runat="server">Register</asp:HyperLink>
+                        </strong></p>
+                </td>
+                <td style="width:650px; height:500px; background-color:lightsteelblue">
+                    <div>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="background-color:darkcyan; text-align:center">
+                    <b>Copyright Michał Sokół 2017</b>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+
+
+
+
